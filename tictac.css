@@ -1,0 +1,181 @@
+
+body {
+  background: -webkit-linear-gradient(left top, rgb(210,253,255),rgb(58,190,255)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, rgb(210,253,255),rgb(58,190,255)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, rgb(210,253,255),rgb(58,190,255)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(left top, rgb(210,253,255),rgb(58,190,255)); /* Standard 1syntax */
+  background-position: center;
+  background-size: 100%;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.tile {
+	border: 1px solid #820933;
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	margin: 2.5px;
+	box-shadow: 
+	inset 0px 0px 1px 0.5px gray,
+	0px 0px 1px 0.5px gray;
+	overflow: hidden;
+	display: inline-block;
+	background-color: white;
+	transition: ease-in-out 0.5s;
+}
+
+.tile:hover{
+	box-shadow: none;
+
+
+
+}
+
+.fa-times{
+	color: #D84797;
+}
+
+.fa-circle-o{
+	color: #26FFE6;
+}
+
+.container-middle{
+	width: 329px;
+	height: 328px;
+	margin: 2% auto;
+	background-color: rgb(210,253,255);
+	padding: 3px;
+	border: 2px solid rgb(210,253,255);
+	box-shadow:
+	 0px 0px 1px 1px #D2FDFF,
+	 1px 1px 2px 2px gray;
+
+}
+
+
+.tile-times{
+	visibility: visible;
+	text-align: center;
+	margin: 0% 12%;
+	font-size: 6em !important;
+	color: #D84797;
+	animation-name: timesani;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+}
+
+
+@keyframes timesani{
+	0% {font-size: 0.5em;opacity:0.1;transform:rotate(0deg)}
+	10% {font-size: 1em;opacity:0.2;transform:rotate(45deg)}
+	25% {font-size: 1.5em;opacity:0.3;transform:rotate(90deg)}
+	40% {font-size: 2em;opacity:0.4;transform:rotate(130deg)}
+	50% {font-size: 2.5em;opacity:0.5;transform:rotate(180deg)}
+	60% {font-size: 3em;opacity:0.6;transform:rotate(230deg)}
+	75% {font-size: 4em;opacity:0.7;transform:rotate(270deg)}
+	85% {font-size: 5em;opacity:0.8;transform:rotate(320deg)}
+	100% {font-size: 6em;opacity:1;transform:rotate(360deg)}
+}
+
+
+
+.tile-circle{
+	text-align: center;
+	margin: 0% 9%;
+	font-size: 6em !important;
+	color: #26FFE6;
+	animation-name: circleani;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	position: relative;
+
+}
+
+@keyframes circleani{
+	0% {font-size: 0.5em;opacity:0.1;transform:rotate(0deg);bottom: -90px}
+	10% {font-size: 1em;opacity:0.2;transform:rotate(45deg);bottom: -80px}0
+	25% {font-size: 1.5em;opacity:0.3;transform:rotate(90deg);bottom: -70px}
+	40% {font-size: 2em;opacity:0.4;transform:rotate(130deg);bottom: -60px}
+	50% {font-size: 2.5em;opacity:0.5;transform:rotate(180deg);bottom: -50px}
+	60% {font-size: 3em;opacity:0.6;transform:rotate(230deg);bottom: -40px}
+	75% {font-size: 4em;opacity:0.7;transform:rotate(270deg);bottom: -30px}
+	85% {font-size: 5em;opacity:0.8;transform:rotate(320deg);bottom: -20px}
+	90% {font-size: 6em;opacity:1;transform:rotate(360deg);bottom: -10px}
+	90% {font-size: 6em;opacity:1;transform:rotate(360deg);bottom:00px}
+
+}
+
+
+.mark-times, .mark-o{
+	text-align: center;
+	width: 50%;
+	 display: inline-block;
+
+}
+
+
+
+.mark-o:hover, .mark-times:hover{
+
+	background-color: rgba(240,240,240,0.6);
+
+}
+
+.choose {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	cursor: pointer;
+	width: 160px;
+	height: 120px;
+	position: relative;
+	text-align: center;
+	overflow: hidden;	
+	margin: 30px auto 0 auto;
+	background-color: white;
+	box-shadow: 
+	inset 0px 0px 1px 0.5px gray,
+	0px 0px 1px 0.5px gray;
+}
+
+p {
+	margin: 0;
+	margin-top: 10px;
+	position: relative;
+	text-align: center;
+	bottom: 0px;
+	margin-left: 2px;
+}
+
+
+p {
+
+	font-family: 'Share Tech Mono', monospace;
+	letter-spacing: none;
+}
+
+
+.play {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 2em;
+	opacity: 0;
+	font-weight: bold;
+	width: 200px;
+	cursor: pointer;
+	margin: 0 auto;
+	color: #D84797;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px #3ABEFF;
+}
+/* color palette:
+claret: #820933;
+pink(pantone): #D84797;
+light cyan: #D2FDFF;
+brilliant azure: #3ABEFF;
+turquize blue: #26FFE6;
+*/
+
+
